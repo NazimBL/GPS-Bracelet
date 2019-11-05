@@ -1,0 +1,34 @@
+link:
+https://www.smart-prototyping.com/image/data/9_Modules/101756%20Wireless%20A6C/A6A7A6CA20_AT_Commends.pdf
+----------------------------------------------------------------------------
+GPS:
+at+gps=1
+ok
+AT+GPSRD=0
+AT+GPSRD=N
+//seconds interval forresponse
+-----------------------------------------------------------------------
+GPRS:
+AT+CFUN  sets the functionnality level (sleep , up , down etc.. )
+AT+CMUX=1 (transparency shit)
+AT+IPR=0 auto baud rate
+AT+RST software reset
+AT+CPIN pin state
+AT+CSQ power signal
+AT+CREG register status
+AT+CGATT=1 attach gprs
+
+// useless 
+AT+CGACT you can get the list of PDP contextx and activate the selected context.
+
+AT+CGREG? gprs network state
+---------------------------------------------------------------
+AT+CREG?
+AT+CGATT=1
+AT+CGDCONT=1,"IP","djezzy.internet"
+AT+CGACT=1,1
+AT+CIPSTART
+AT+CIPSEND
+
+package data protocol
+
