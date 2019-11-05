@@ -1,0 +1,7 @@
+Difference between Serial.print/prinln & Serial.write:
+-Serial.write send a byte value while Serial.print sends ASCII-human readable (strings) values
+ better use in display(lcds and shit) or storage (sd card).
+==> Serial.write uses less size
+-Serial.println() sends \r \n at the end of the argument
+*Conclusion :Serial.write() is definetely more suitable in our communication protocal
+
